@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Cryptocurrency</title>
+</head>
+<body>
+    <div class="indexbody">
+        <h2>THE CONVERTER</h2>
+        <hr>
+        FROM
+        <select id="getValutaFrom" value="DKK">
+            <option value="DKK">DKK</option>
+            <option value="USD">USD</option>
+            <option value="SEK">SEK</option>
+            <option value="GBP">GRP</option>
+            <option value="EUR">EUR</option>
+        </select>
+        <input type="text" placeholder="INSERT AMOUNT" id="getValue"> TO
+        <select id="getValutaTo" value="BTC">
+            <option value="BTC">BitCoin</option>
+        </select>
+        <input type="submit"value="Get Amount" id="getCrypto">
+        <div id="Crypto"></div>
+        <div class="currencyinput">
+                <br>
+                <button id="btnGetRates">GET CURRENT RATES FOR ONE USD</button>
+            <h2>ONE USD CURRENCY RATES</h2>             
+                <div id="CryptoOutput"></div>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
